@@ -37,7 +37,7 @@
     <![endif]-->
     <style>
         .panel-footer {
-            height:120px;
+            height:128px;
             padding:10px;
         }
         .progress {
@@ -46,12 +46,48 @@
         .list-group {
             margin-bottom:0px;
         }
+        .list-group-item {
+            padding:9px 5px;
+            font-size:12px;            
+        }
+
+        a.list-group-item {
+            color:black;
+        }
+        .progress, .progress-bar {
+            width:80px;
+            height:12px;
+        }
+        .list-group2 > a {
+            padding:10px 6px;
+        }
+        .list-group3 > a {
+            padding:4px;
+        }
+        .panel {
+            margin-bottom:10px;
+        }
+        .page-header {
+            margin: 20px 0 10px;
+            font-size:24px;
+        }
+        .timeline > li > .timeline-panel {
+            padding:10px;
+            margin-top:5px;
+        }
+        .timeline, .panel-body {
+            padding:10px;
+            padding-bottom:0px;
+        }
+        .list-group-item>i {
+            font-weight:bold;
+        }
     </style>
 </head>
 
-<body style="margin:250px;margin-top:0px;margin-bottom:0px;">
+<body style="margin:10px;margin-top:0px;margin-bottom:0px;">
 
-    <div id="wrapper">
+    <div id="wrapper" style="width:996px;margin-left:auto;margin-right:auto;">
 
         <!-- Navigation -->
         
@@ -59,80 +95,83 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Mohamed Farouk Mohamed</h1>
+                    <span class="pull-right text-muted small" style="margin-top:-30px;"><em>Version e1.0 - Updated: 13/11/2015</em></span>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-user fa-2x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <b>Basic Info</b>
+                <div style="margin-left:auto;margin-right:auto;">
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Basic Info</b>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         
+                                <div class="panel-footer">
+                                    <div style="margin:4px;"><span class="fa fa-envelope-o"></span> mfmnow@yahoo.com</div>
+                                    <div style="margin:4px;"><span class="glyphicon glyphicon-phone"></span> +61 449799717</div>
+                                    <div style="margin:4px;"><span class="glyphicon glyphicon-home"></span> Gladesville, NSW (2111)</div>
+                                    <div style="margin:4px;"><span class="fa fa-linkedin-square"></span> <a href="http://www.linkedin.com/in/mfmnow" target="_blank">http://www.linkedin.com/in/mfmnow</a></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-check fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Residency Status</b>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="panel-footer">
-                                <div style="margin:4px;"><span class="fa fa-envelope-o"></span> mfmnow@yahoo.com</div>
-                                <div style="margin:4px;"><span class="glyphicon glyphicon-phone"></span> +61 449799717</div>
-                                <div style="margin:4px;"><span class="glyphicon glyphicon-home"></span> 1-7 Monash Road, Gladesville, NSW (2111)</div>
-                                <div style="margin:4px;"><span class="fa fa-linkedin-square"></span> <a href="http://www.linkedin.com/in/mfmnow" target="_blank">http://www.linkedin.com/in/mfmnow</a></div>
-                                <div class="clearfix"></div>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-check fa-2x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <b>Residency Status</b>
-                                </div>
+                                <div style="margin:4px;"><span class="fa fa-location-arrow"></span> Australian Permanent Resident (Skilled Immigrant)</div>
+                                <div style="margin:4px;"><span class="fa fa-location-arrow"></span> Canadian Permanent Resident (Skilled Immigrant Nominated by Ontario)</div>
                             </div>
                         </div>
-                        <div class="panel-footer">
-                            <div style="margin:4px;"><span class="fa fa-location-arrow"></span> Australian Permanent Resident (Skilled Immigrant)</div>
-                            <div style="margin:4px;"><span class="fa fa-location-arrow"></span> Canadian Permanent Resident (Skilled Immigrant Nominated by Ontario)</div>
+                    </div>
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-bullseye fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Objective</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div style="margin:4px;">A challenging opportunity in a growing environment where my experiences in software development and technical management are fully utilized and being beneficial to the organization.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-bullseye fa-2x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <b>Objective</b>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <div style="margin:4px;">A challenging opportunity in a growing environment where my experiences in software development and technical management are fully utilized and being beneficial to the organization.</div>
-                        </div>
-                    </div>
-                </div>
-            <!-- /.row -->
+            </div>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-6" style="width:610px;padding:0px;padding-right:5px;margin-left:8px;">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bar-chart-o fa-fw"></i> <b>Technical Skills</b>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body" style="height:464px;">
+                        <div class="panel-body" style="height:560px;padding:8px;">
                             <div class="list-group">
                                 <a class="list-group-item">
-                                    <i class="fa fa-file-code-o fa-fw"></i> <b>.NET Technologies:</b> .NET Framework (1.1 -> 4.5), C#, VB.NET, ASP.NET, ADO.NET, Web Services & .NET Remoting
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Basic .NET Technologies:</b> .NET Framework (1.1 -> 4.5), C#, VB.NET
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
@@ -141,7 +180,25 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Scripting and Markup Languages:</b> HTML4/5, XML, DHTML, CSS2/3,  OO JavaScript/1.8, JSON, JQuery and AJAX
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>.NET Technologies:</b> ASP.NET, ADO.NET, Web Services & .NET Remoting
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                                <a class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Scripting Languages:</b> OO JavaScript/1.8, JSON, JQuery and AJAX
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                                <a class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Markup Languages:</b> HTML4/5, XML, DHTML, CSS2/3
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
@@ -168,7 +225,7 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-wrench fa-fw"></i> <b>Software Management Tools:</b> Microsoft Office, Microsoft Project, Microsoft Visio, SVN, TFS and MS SourceSafe
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Software Management Tools:</b> Microsoft Project, Microsoft Visio
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
@@ -177,7 +234,25 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-wrench fa-fw"></i> <b>Developing Tools/IDEs:</b> Visual Studio .NET 2003-2013, TOAD for Oracle, Dreamweaver and SharePoint Designer
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Source Control:</b>Team Foundation Server, SourceSafe and SVN Subversion
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                                <a class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Development IDEs:</b> Visual Studio .NET 2003-2013, Dreamweaver and Eclipse
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                                <a class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Development Tools:</b> TOAD for Oracle and SharePoint Designer
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
@@ -195,7 +270,7 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-wrench fa-fw"></i> <b>Application Servers:</b> SharePoint 2003-2010, Ultimus Workflow BPM, MOODLE and MS CMS
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Application Servers:</b> SharePoint 2003-2010, Ultimus Workflow BPM and MOODLE
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
@@ -204,7 +279,7 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Technologies:</b> C/C++, Visual C++ 6.0, Java, Visual Basic, JSP, WCF and Eclipse
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Programming Languages:</b> C/C++, Visual C++ 6.0, Java and Visual Basic
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -213,7 +288,16 @@
                                     </span>
                                 </a>
                                 <a class="list-group-item">
-                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Technologies:</b> XAML, WPF and WWF
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Technologies:</b> JSP and WCF
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+                                <a class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Technologies:</b> XAML, WPF,  WWF, AWS and Github
                                     <span class="pull-right text-muted small">
                                         <div class="progress active">
                                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
@@ -226,194 +310,81 @@
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <ul class="timeline">
-                                <li>
-                                    <div class="timeline-badge"><i class="fa fa-check"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
-                                            <hr>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                    <i class="fa fa-gear"></i>  <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#">Action</a>
-                                                    </li>
-                                                    <li><a href="#">Another action</a>
-                                                    </li>
-                                                    <li><a href="#">Something else here</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-6" style="width:400px;padding:0px;">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-check-square fa-fw"></i> Other Skills
+                            <i class="fa fa-check-square fa-fw"></i> <b>Other Skills</b>
                         </div>
                         <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
-                                <a class="list-group-item" style="padding:5px;">
+                        <div class="panel-body" style="height:560px;padding:8px;">
+                            <div class="list-group list-group2">
+                                <a class="list-group-item">
                                     &#x02022; Windows 2000-10 administration
                                     <span class="pull-right text-muted small"><em>Operating Systems</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Windows 2000-2012 Server administration
                                     <span class="pull-right text-muted small"><em>Operating Systems</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; openSUSE 11 and Ubuntu administration
                                     <span class="pull-right text-muted small"><em>Operating Systems</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Installation of (Linux/Apache/MySQL/PHP)
                                     <span class="pull-right text-muted small"><em>Operating Systems</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Microsoft IIS(5 to 8.5)
                                     <span class="pull-right text-muted small"><em>Web Servers Administration</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Apache Web Server
                                     <span class="pull-right text-muted small"><em>Web Servers Administration</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Software Architecture
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Code Architecture (OO Analysis and Design)
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Project Planning, Management and Leadership
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Database Analysis & Design (ER Data Modeling)
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
-                                    &#x02022; Balancing tight deadlines and high quality standards
+                                <a class="list-group-item">
+                                    &#x02022; Commited to tight deadlines/high quality standards
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; High trouble shooting skills
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; Technical writing
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
                                 </a>
-                                <a class="list-group-item" style="padding:5px;">
+                                <a class="list-group-item">
                                     &#x02022; UI/UX design skills
                                     <span class="pull-right text-muted small"><em>Other Skills</em>
                                     </span>
@@ -424,137 +395,436 @@
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8" style="width:100%;">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                            <i class="fa fa-clock-o fa-fw"></i> <b>Employment History (2014-Present)</b>
                         </div>
+                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge"><i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> March 2015 - Present</small>
+                                            <h4 class="timeline-title">Senior Software Developer</h4>
+                                            <b>EmployeeConnect Software - EC</b><br />
+                                            Sydney, NSW (<a href="http://www.employeeconnect.com" target="_blank">www.employeeconnect.com</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item active">
+                                                        Main Responsibilities
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Developing and maintaining core ERP System core 
+                                                        <br />(.NET 4, VB.NET, SQL Server)
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Planning and managing next release of the core ERP System core 
+                                                        <br />(.NET 4.5, MVC, C#, SQL Server)
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-160px;">
+                                    <div class="timeline-badge warning">1
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> December 2014 - March 2015</small>
+                                            <h4 class="timeline-title">LMS Specialist and IT Officer</h4>
+                                            <b>Australasian Society for Ultrasound in Medicine - ASUM </b><br />
+                                            Sydney, NSW (<a href="http://www.asum.com.au" target="_blank">www.asum.com.au</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item active">
+                                                        Main Responsibilities
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Developing and managing corporate websites 
+                                                        <br />(PHP, MySQL and WordPress)
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Managing Learning Management System (MOODLE, Articulate and TopClass)
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Providing overall IT support and giving advises regarding IT services and IT purchases
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>                                
+                            </ul>
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
-                    <div class="chat-panel panel panel-default">
+                </div>
+                <!-- /.col-lg-8 -->                
+            </div>
+            <div style="page-break-after: always;"></div>
+            <!-- /.row -->
+             <div class="row">
+                <div class="col-lg-8" style="width:100%;">
+                    <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i>
-                            Chat
-                            <div class="btn-group pull-right">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu slidedown">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-refresh fa-fw"></i> Refresh
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-check-circle fa-fw"></i> Available
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-times fa-fw"></i> Busy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-clock-o fa-fw"></i> Away
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <i class="fa fa-clock-o fa-fw"></i> <b>Employment History (Before 2014)</b>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge danger">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> April 2009 - August 2014</small>
+                                            <h4 class="timeline-title">Software Development Manager/ Software Engineer</h4>
+                                            <b>ALHOSN University - AHU </b><br />
+                                            Abu Dhabi, UAE (<a href="http://www.alhosnu.ae" target="_blank">www.alhosnu.ae</a>)
+                                            </p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item active">
+                                                        Main Responsibilities
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Planning and managing IT projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Software and hardware procurement
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Leading analyzing, developing, deploying and administrating in-house developed projects
+                                                    </a>
+                                                 </div>
+                                                 <div class="list-group list-group3" style="margin-top:5px;">
+                                                    <a class="list-group-item active">
+                                                        Main Projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>ALHOSN University Official Website, 4 Online Portals & Full Automation</b>
+                                                        <br />
+                                                        <i>About the project:</i> This is a large system written in .NET to automate the university's activities, provide online services through 4 different portals (Students, Instructors, Administration and Sponsors) and a corporate website integrated with a full featured Content Management System. The whole system was developed in-house.
+                                                        <br />
+                                                        <i>Main Technologies used:</i> Microsoft .NET (C# and ASP.NET 4.0), IIS, Windows Server, SQL Server 2012 and Oracle 10g database.
+                                                        <br />
+                                                        <i>Project Duration:</i> 3 years and 6 Months.
+                                                        <br />
+                                                        <i>Portals Features:</i> http://goo.gl/6umpnn
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Analysis, design and development</li>
+                                                            <li>Deployment, administrating and troubleshooting</li>
+                                                            <li>Technical project management</li>
+                                                        </ul>
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>MOODLE Course Management System</b>
+                                                        <br />
+                                                        <i>About the project:</i> Moodle Installation on openSuse 11.0, Moodle UI Customizations, Integration with TurnItIn and Integration with McGraw-Hill application.
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                <li class="timeline-inverted" style="margin-top:-530px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> June 2007 - April 2009</small>
+                                            <h4 class="timeline-title">Senior Systems Developer and Analyst</h4>
+                                            <b>Ministry of Presidential Affairs - MoPA </b><br />
+                                            Abu Dhabi, UAE (<a href="http://www.mopa.ae" target="_blank">www.mopa.ae</a>)
+                                            </p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item active">
+                                                        Main Responsibilities
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Analyzing and developing projects (Mainly Web-based) for the ministry
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Deploying and administrating Web based projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Support and troubleshooting Web based projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Managing and training junior and new senior developers
+                                                    </a>
+                                                 </div>
+                                                 <div class="list-group list-group3" style="margin-top:5px;">
+                                                    <a class="list-group-item active">
+                                                        Main Projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>MOPA Content Management Server (Codenamed: CMSConcept)</b>
+                                                        <br />
+                                                        <i>About the project:</i> The main target of MOPA CMSConcept is to provide an easy and smart way to create static and dynamic websites with maximum flexibility and minimum time and effort:
+                                                        <ul>
+                                                            <li>
+                                                                For Basic Users): Provides a way for end user (NON-Developer) to create multiple web sites, manage their content (Static and Dynamic contents)
+                                                            </li>
+                                                            <li>
+                                                                (For Advanced Users): Provides an easy way to integrate with and extend the CMS application without complications of re-development (Run-time Integration and Extension)
+                                                            </li>
+                                                        </ul>
+                                                        <i>Main Technologies used:</i> C#, ASP.NET, IIS, Windows Server, SQL Server and Visual Studio .NET.
+                                                        <br />
+                                                        <i>Project Duration:</i> 6 months.
+                                                        <br />
+                                                        <i>CMS Features:</i> http://goo.gl/uKzhu
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Idea, Analysis, application design and development</li>
+                                                            <li>Project planning and management</li>
+                                                            <li>Participated in the UI design</li>
+                                                        </ul>
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>HH Sheikh Khalifa Bin Zayed Al.Nahyan (UAE President) Website</b>
+                                                        <br />
+                                                        <i>About the project:</i> This is the official website for HH Sheikh Khalifa Bin Zayed Al.Nahyan containing his news, photo galleries, search engine and other information about HH, Abu Dhabi and Emirates.
+                                                        <br />
+                                                        <i>Main Technologies used:</i> Full implementation of the MOPA Content Management Server to manage site structure and information.
+                                                        <br />
+                                                        <i>Project Duration:</i> 6 months.
+                                                        <br />
+                                                        <i>URL:</i> http://www.uaepresident.ae/
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Idea, Analysis, application design and development</li>
+                                                            <li>Project planning and management</li>
+                                                        </ul>
+                                                    </a>
+                                                     <a class="list-group-item">
+                                                        <b>Ministry of Presidential Affairs in the UAE Intranet System</b>
+                                                        <br />
+                                                        <i>Main Technologies used:</i> SharePoint Server 2003, C#, ASP.NET, IIS, SQL Server, Visual Studio .NET, Oracle 10g, Ultimus Workflow and Saperion Archiving System.
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Administrating and troubleshooting SharePoint Server</li>
+                                                            <li>Migration from SharePoint 2003 to 2007</li>
+                                                            <li>Analysis and development for customized web applications for custom E-Services</li>
+                                                            <li>Responsible for the integration between SharePoint and Ultimus Workflow</li>
+                                                        </ul>
+                                                    </a>
+                                                     <a class="list-group-item">
+                                                        <b>Ministry of Presidential Affairs in the UAE Official Website (MOPA)</b>
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                <li style="margin-top:-530px;">
+                                    <div class="timeline-badge danger">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> December 2002 - June 2007</small>
+                                            <h4 class="timeline-title">Technical Project Manager</h4>
+                                            <b>Sakhr Software</b><br />
+                                            Cairo, Egypt / Abu Dhabi, UAE (<a href="http://www.mopa.ae" target="_blank">www.mopa.ae</a>)
+                                            <ul>
+                                                <li>Dec 2002 to Jun 2003: Junior Software Developer</li>
+                                                <li>Jun 2003 to Jan 2005: Senior Software Developer</li>
+                                                <li>Jan 2005 to Dec 2006: Technical team leader</li>
+                                                <li>Dec 2006 to Jun 2007: Technical project manager</li>
+                                            </ul>
+                                            </p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item active">
+                                                        Main Responsibilities
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Analyzing and developing projects held by the company
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Planning and managing some of the projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Team leading
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        Deploying and administrating Web based projects
+                                                    </a>
+                                                 </div>
+                                                 <div class="list-group list-group3" style="margin-top:5px;">
+                                                    <a class="list-group-item active">
+                                                        Main Projects
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>Abu Dhabi Educational Zone Web Based Automation System (ADEZ)</b>
+                                                        <br />
+                                                        <i>About the project:</i> This is a huge .NET based system that handles all the Educational Zone activities and interactivity between Educational Process Parties like Students, Parents, Teachers, School management and Zone management. The system contains about 2.5 million lines of code and contains a large number of sub-projects like a full featured Web Portal, School Management System, Office Automation System, Learning Management System, Archiving System ...etc
+                                                        <i>Main Technologies used:</i> C#, ASP.NET, IIS, Windows Server, Microsoft SQL Server, Microsoft Visual Studio .NET, MailSite Mail Server, Ultimus Workflow, Centra LMS, Arabdox Archiving system.
+                                                        <br />
+                                                        <i>Project Duration:</i> 3 years.
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Analysis and development</li>
+                                                            <li>Technical project management and reporting to senior management</li>
+                                                            <li>Deployment and troubleshooting the application on 25 servers</li>
+                                                        </ul>
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>Oman Ministry of Education Web Based Full Automation System</b>
+                                                        <br />
+                                                        <i>URL:</i> http://www.moe.gov.om                                                        
+                                                    </a>
+                                                     <a class="list-group-item">
+                                                        <b>Ministry of Presidential Affairs in the UAE Intranet System</b>
+                                                        <br />
+                                                        <i>Main Technologies used:</i> SharePoint Server 2003, C#, ASP.NET, IIS, SQL Server, Visual Studio .NET, Oracle 10g, Ultimus Workflow and Saperion Archiving System.
+                                                        <br />
+                                                        <i>Role in the project:</i>
+                                                        <ul>
+                                                            <li>Administrating and troubleshooting SharePoint Server/li>
+                                                            <li>Migration from SharePoint 2003 to 2007</li>
+                                                            <li>Analysis and development for customized web applications for custom E-Services</li>
+                                                            <li>Responsible for the integration between SharePoint and Ultimus Workflow</li>
+                                                        </ul>
+                                                    </a>
+                                                     <a class="list-group-item">
+                                                        <b>Qatar Environmental Council Web Based System (SCENR)</b>
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
                                     </div>
                                 </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                <li class="timeline-inverted" style="margin-top:-435px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> April 2002 - December 2002</small>
+                                            <h4 class="timeline-title">Web/Application developer</h4>
+                                            <b>EKnowledge Company </b><br />
+                                            Cairo, Egypt(<a href="http://www.go-eknowledge.com" target="_blank">www.go-eknowledge.com</a>)
+                                            </p>
                                         </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
+                                        <br />
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> January 2002 - April 2002</small>
+                                            <h4 class="timeline-title">Web specialist</h4>
+                                            <b>PharoWeb Egypt for complete IT solutions </b>
+                                            </p>
+                                        </div>
+                                        <br />
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> August 2000 - January 2001</small>
+                                            <h4 class="timeline-title">Civil engineering experience</h4>
+                                            </p>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <!-- /.panel-body -->
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- /.panel-footer -->
                     </div>
-                    <!-- /.panel .chat-panel -->
                 </div>
-                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8" style="width:100%;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> <b>Education</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge">1
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> Jan 2001 - Dec 2001</small>
+                                            <h4 class="timeline-title">Post Graduate Diploma in Systems Development</h4>
+                                            <b>Information Technology Institute (ITI)</b><br />
+                                            Part of Information and Decision Support Center (IDSC)<br />
+                                            Giza, Egypt (<a href="http://www.iti.gov.eg" target="_blank">www.iti.gov.eg</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item">
+                                                        <b>Graduation Project:</b> VoiceXML Gateway (Written in C++)
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>Graduation Grade:</b> Excellent
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-165px;">
+                                    <div class="timeline-badge warning">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 1995 - 2000</small>
+                                            <h4 class="timeline-title">Bachelor of Science in Engineering</h4>
+                                            <b>Ain Shams University, Faculty of Engineering</b><br />
+                                            Cairo, Egypt (<a href="http://www.asu.edu.eg" target="_blank">www.asu.edu.eg</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                                <div class="list-group list-group3">
+                                                    <a class="list-group-item">
+                                                        <b>Major:</b> Civil Engineering
+                                                    </a>
+                                                    <a class="list-group-item">
+                                                        <b>Graduation Project:</b> Sanitary Engineering project
+                                                    </a>
+                                                 </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>                                
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+                
             </div>
             <!-- /.row -->
         </div>
