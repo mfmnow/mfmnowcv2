@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .panel-footer {
+            height: 80px;
+            padding: 10px;
+        }
+
+        .progress {
+            width: 100px;
+        }
+
+        .list-group {
+            margin-bottom: 0px;
+        }
+
+        .list-group-item {
+            padding: 9px 5px;
+            font-size: 12px;
+        }
+
+        a.list-group-item {
+            color: black;
+        }
+
+        .progress,
+        .progress-bar {
+            width: 80px;
+            height: 12px;
+        }
+
+        .list-group2>li {
+            padding: 10px 6px;
+        }
+
+        .list-group3>li {
+            padding: 4px;
+        }
+
+        .list-group4>li {
+            font-size: 14px;
+        }
+
+        .panel {
+            margin-bottom: 3px;
+        }
+
+        .page-header {
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+
+        .timeline>li>.timeline-panel {
+            padding: 10px;
+            margin-top: 5px;
+        }
+
+        .timeline,
+        .panel-body {
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+
+        .list-group-item>i {
+            font-weight: bold;
+        }
+
+        .timeline>li {
+            margin-bottom: 0px;
+        }
+
+        a {
+            color: #337ab7 !important;
+        }
+
+        .panel.panel-horizontal {
+            display: table;
+            width: 100%;
+        }
+
+        .panel.panel-horizontal>.panel-heading,
+        .panel.panel-horizontal>.panel-body,
+        .panel.panel-horizontal>.panel-footer {
+            display: table-cell;
+        }
+
+        .panel.panel-horizontal>.panel-heading,
+        .panel.panel-horizontal>.panel-footer {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        .panel.panel-horizontal>.panel-heading {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+            color: #fff;
+            width: 15%;
+        }
+
+        .panel.panel-horizontal>.panel-footer {
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 4px;
+            height: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    </style>
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+</head>
+
+<body style="margin:10px;margin-top:10px;margin-bottom:0px;background-color:white;">
+
+    <div id="wrapper" style="width:996px;margin-left:auto;margin-right:auto;">
+
+        <!-- Navigation -->
+
+        <div id="page-qwrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Mohamed Farouk Mohamed</h1>
+                    <span class="pull-right text-muted small" style="margin-top:-30px;"><em>Version 9.1ca - Updated:
+                            07/01/2024</em></span>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="row" style="margin-bottom:7px;">
+                <div class="col-lg-12">
+                    <div class="pull-right"><a href="http://mfmnow.github.io/mfmnowcv2/pages/MFM.Resume.9.0ca.doc"
+                            target="_blank" type="button" class="btn btn-outline btn-primary btn-xs"><span
+                                class="fa fa-file-word-o"></span> View Classic Resume View in Microsoft Word format</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row" style="margin-bottom: 7px;">
+                <div style="margin-left:auto;margin-right:auto;">
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-user fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Basic Info</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-footer" style="padding-top: 5px;">
+                                <div style="margin:4px;margin-top: 0px;"><span class="fa fa-envelope-o"></span>
+                                    mfmnow@yahoo.com</div>
+                                <div style="margin:4px;"><span class="glyphicon glyphicon-phone"></span> +1 647 613 1540
+                                </div>
+                                <div style="margin:4px;"><span class="glyphicon glyphicon-home"></span> Toronto, ON
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-external-link fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Social Profiles</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-footer" style="padding-top: 5px;">
+                                <div style="margin:4px;margin-top: 0px;"><span class="fa fa-linkedin-square"></span> <a
+                                        href="http://www.linkedin.com/in/mfmnow"
+                                        target="_blank">http://www.linkedin.com/in/mfmnow</a></div>
+                                <div style="margin:4px;"><span class="fa fa-stack-overflow"></span> <a
+                                        href="https://stackoverflow.com/u/5135107/"
+                                        target="_blank">https://stackoverflow.com/u/5135107</a></div>
+                                <div style="margin:4px;"><span class="fa fa-github"></span> <a
+                                        href="https://github.com/mfmnow?tab=repositories"
+                                        target="_blank">https://github.com/mfmnow</a></div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6" style="width:342px;">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-check fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Work Rights</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer" style="padding-top: 5px;">
+                                <div style="margin:4px;margin-top: 0px;"><span class="fa fa-location-arrow"></span>
+                                    <b>Canadian Citizen</b></div>
+                                <div style="margin:4px;"><span class="fa fa-location-arrow"></span> Australian Citizen
+                                </div>
+                                <div style="margin:4px;"><span class="fa fa-location-arrow"></span> UAE Work Rights (Without Sponsorship) 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 5px;">
+                <div class="col-md-12 mb-4" style="margin-bottom: 2px;">
+                    <div id="wrap">
+                        <div class="panel panel-red panel-horizontal">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-bullseye fa-2x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <b>Objective</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">A challenging opportunity in a growing environment where I have
+                                the opportunity
+                                to use my set of skills and experiences to make things smarter, better and faster.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-6" style="width:610px;padding:0px;padding-right:5px;margin-left:8px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> <b>Technical Skills</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="height:520px;padding:8px;">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <i class="fa fa-code fa-fw"></i> <b>Backend:</b> 
+                                    .NET(1->8), Framework(1.1-> 4.7), C#(1->12), EF, &amp; VB.NET
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Frontend:</b> JavaScript, TypeScript, ASP.NET MVC,                                      
+                                    Angular (4->13) &amp; NodeJs
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-cloud fa-fw"></i> <b>Cloud Technologies:</b> Azure(5 years),
+                                    AWS(5 years) inc. Azure &amp; Lambda Functions 
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 70%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Application Servers:</b>  Redis, RabbitMQ, 
+                                    Azure Apps/Storage, MSMQ, PowerBI &amp; S3
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 70%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-cogs fa-fw"></i> <b>CI/CD DevOps:</b> AzureDevOps,
+                                    TFS, Jenkins, TeamCity, Docker &amp; Octopus
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 85%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-database fa-fw"></i> <b>Databases:</b> SQL Server
+                                    2000-2016, Oracle 11g, TOAD (Oracle), Postgres &amp; MySQL
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-copy fa-fw"></i> <b>NoSql Databases:</b> Azure CosmosDb &amp;
+                                    AWS DynamoDb
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 75%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-thumbs-up fa-fw"></i> <b>Testing:</b> Backend (xUnit, Moq), Frontend
+                                    (Karma, Jasmine) &amp; Automation (Selenium)
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-exchange fa-fw"></i> <b>Source Control:</b>GIT (BitBucket, Github and
+                                    AzureDevOps), TFS &amp; SVN Subversion
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Software Management Tools:</b> AzureDevOps,
+                                    TFS, JIRA, MS Project &amp; MS Visio
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Markup Languages:</b> HTML4/5, XML,
+                                    DHTML, CSS2/3, Materialize &amp; Bootstrap 3-5
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-wrench fa-fw"></i> <b>Development Tools:</b> Visual Studio .NET
+                                    2003-2022, Postman, Fiddler &amp; Eclipse
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Classic Scripting:</b> OO
+                                    JavaScript/1.8, JQuery, AJAX, PHP &amp; ASP
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-success" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 90%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="fa fa-file-code-o fa-fw"></i> <b>Other Technologies:</b> REACT, SharePoint,
+                                    Sitefinity, MOODLE, XAML, WPF &amp;
+                                    GraphQL
+                                    <span class="pull-right text-muted small">
+                                        <div class="progress active">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                                                style="width: 30%">
+                                            </div>
+                                        </div>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <div class="col-lg-4 col-md-6" style="width:400px;padding:0px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-check-square fa-fw"></i> <b>Other Skills</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="height:520px;padding:8px;">
+                            <ul class="list-group list-group2">
+                                <li class="list-group-item">
+                                    &#x02022; Software Architecture (Microservices, DDD and SOA)
+                                    <span class="pull-right text-muted small"><em>Architecture</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Project Planning, Management (AGILE, SCRUM)
+                                    <span class="pull-right text-muted small"><em>Management</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Code Architecture (SOLID, OO , Dependency Injection)
+                                    <span class="pull-right text-muted small"><em>Architecture</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; CI/CD and DevOps
+                                    <span class="pull-right text-muted small"><em>Continuous Delivery</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Database Analysis & Design (ER Data Modeling)
+                                    <span class="pull-right text-muted small"><em>Database</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Experienced in interviewing and recruitment
+                                    <span class="pull-right text-muted small"><em>Management</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Ability to conduct effective 1 on 1s
+                                    <span class="pull-right text-muted small"><em>Management</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Technical writing, Wiki creation (Markdown language)
+                                    <span class="pull-right text-muted small"><em>Other Skills</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; UI/UX design skills (Inc WCAG 2.1 compliance)
+                                    <span class="pull-right text-muted small"><em>Other Skills</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Windows administration (Pro and Server)
+                                    <span class="pull-right text-muted small"><em>Operating Systems</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Linux administration (Linux/Apache/MySQL/PHP)
+                                    <span class="pull-right text-muted small"><em>Operating Systems</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Secuity and privacy assessments
+                                    <span class="pull-right text-muted small"><em>Secuity</em>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">
+                                    &#x02022; Microsoft IIS(Latest) and Apache
+                                    <span class="pull-right text-muted small"><em>Web Servers Administration</em>
+                                    </span>
+                                </li>
+                            </ul>
+                            <!-- /.list-group -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8" style="width:100%;padding: 7px;padding-bottom: 0px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> <b>Employment History
+                                <span class="pull-right text-muted small"><em>Continued on next page...</em></span></b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li style="margin-top:-20px;">
+                                    <div class="timeline-badge danger">4
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> May 2020 -
+                                                    Dec 2023 (Jane ceased operation)</small>
+                                            <h4 class="timeline-title">Backend Engineering Manager</h4>
+                                            <b>Jane.com Marketplace</b><br />
+                                            Remote (Headquarters: Lehi, Utah, USA) (<a href="https://www.jane.com/"
+                                                target="_blank">www.jane.com</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities (Backend Engineering Manager [Dec 2020 -
+                                                    Present])
+                                                </li>
+                                                <li class="list-group-item">
+                                                    I started as Senior Backend Developer (May 2020) 
+                                                    then got promoted to Backend Engineering Manager (Dec 2020)
+                                                    then Senior Engineering Manager (May 2022)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Tech responsibilities:</b><br />
+                                                    &#x02022; Promotion of SOLID
+                                                    &#x02022; Online payments
+                                                    &#x02022; Fraud detection
+                                                    &#x02022; Feature flags (experimentations)
+                                                    &#x02022; Event driven architecture
+                                                    &#x02022; Microservices architecture
+                                                    &#x02022; Distributed caching
+                                                    &#x02022; Third parties integrations
+                                                    &#x02022; Migration to .NET 6
+                                                    &#x02022; Others
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Tech stack:</b><br />
+                                                    &#x02022; C#
+                                                    &#x02022; Mixture of .NET MVC to .NET 6 WebAPI projects
+                                                    &#x02022; SQL Server 2016
+                                                    &#x02022; Postgres
+                                                    &#x02022; DynamoDb
+                                                    &#x02022; RabbitMQ
+                                                    &#x02022; Redis
+                                                    &#x02022; API Gateway
+                                                    &#x02022; Lmabda Functions
+                                                    &#x02022; S3
+                                                    &#x02022; Github
+                                                    &#x02022; Jira
+                                                    &#x02022; Confluence
+                                                    &#x02022; AWS
+                                                    &#x02022; Jenkins and TeamCity
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>People responsibilities:</b><br />
+                                                    &#x02022; Recruiting BE engineers
+                                                    &#x02022; Onboarding of new BE engineers
+                                                    &#x02022; Conducting 1 on 1s with BE engineers
+                                                    &#x02022; Planning resources for different teams
+                                                    &#x02022; Support engineers in different ways to help them doing
+                                                    their job in the best way possible.
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-420px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> March 2018 -
+                                                    February 2020</small>
+                                            <h4 class="timeline-title">Scrum Master/Senior Developer (Contract)</h4>
+                                            <b>Cancer Institute NSW (Australian Government) - CINSW</b><br />
+                                            Sydney, NSW, AUS (<a href="https://www.cancer.nsw.gov.au/"
+                                                target="_blank">www.cancer.nsw.gov.au</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities (As Scrum Master)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Backlog items maintenance (Revise, update priories, add new if
+                                                    needed)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Organize and manage Scrum meetings (Sprint planning, stand-ups,
+                                                    Sprint review, Sprint retrospective)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Scrum reporting/documenting project using HPE and AzureDevOps Wiki
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Backlog items points estimations, Tasks breakdown and forecasting.
+                                                </li>
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities (As Senior Developer)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Developing a state wide project consists of 2 Web applications, 1
+                                                    WebAPI and 2 Windows Services. All developed in ASP.NET Core 2
+                                                    <br /><i>Main Technologies used:</i> Single Page Applications (SPA)
+                                                    | Angular CLI 6.2 | TypeScript | SCSS | ASP.NET Core 2 |
+                                                    Moq | SQL Server
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Frontend, Backend and Database development. Write tests using Moq
+                                                    and Karma
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+            </div>
+            <div style="page-break-after: always;"></div>
+            <!-- /.row -->
+            <div class="row" style="margin-top:2px;">
+                <div class="col-lg-8" style="width:100%;padding: 7px;padding-bottom: 0px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> <b>Employment History (Before 2019)</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline" style="margin:0px;padding-bottom:2px;">
+                                <li style="margin-top:-20px;">
+                                    <div class="timeline-badge">1
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> January 2018 -
+                                                    March 2018</small>
+                                            <h4 class="timeline-title">DevOps Engineer (Contract)</h4>
+                                            <b>City of Sydney (CoS)</b><br />
+                                            Sydney, NSW, AUS (<a href="http://www.cityofsydney.nsw.gov.au/"
+                                                target="_blank">www.cityofsydney.nsw.gov.au</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Created a complete CI/CD cycle for major web applications using on
+                                                    premise Microsoft TFS 2018.
+                                                    Also managed backups and disaster recovery of failed deployments.
+                                                    Outcomes:
+                                                    <br />1. Customized build definitions | 2. All components backup |
+                                                    3. Database deployment automation |
+                                                    4. SSIS deployment automation | 5. Web applications and Windows
+                                                    Services deployment automation
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Planned, designed and created development and hot-fix environments
+                                                    in SIT, UAT, Pre-Production for major Web Applications.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    TFS upgrade from 2011/2103 to 2017 and consolidate all source
+                                                    control systems into one. Also added un-tracked projects to source
+                                                    control.
+                                                </li>
+
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-305px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> April 2016 -
+                                                    January 2018</small>
+                                            <h4 class="timeline-title">Senior Application Developer</h4>
+                                            <b>The Royal Australasian College of Physicians - RACP</b><br />
+                                            Sydney, NSW, AUS (<a href="https://www.racp.edu.au"
+                                                target="_blank">www.racp.edu.au</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Developing and Maintaining RACP systems (Mainly Integration Services
+                                                    Application communicating between college different systems)
+                                                    <br /><i>Main Technologies used:</i> (.NET 4, C#, SQL Server, Web
+                                                    Services and WebAPI)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Source Code Installation/Migration from legacy systems to unified
+                                                    GIT server (BitBucket)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Generating Reports (SQL Server and Crystal Reports) and link them to
+                                                    main ERP system (Aptify)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Participate in AGILE (SCRUM) Project Planning using JIRA
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Generating documentation for projects I am involved in using tech
+                                                    documentation tools and Confluence
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Developing and administrating Content Management System (Telerik
+                                                    Sitefinity)
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="margin-top:-130px;">
+                                    <div class="timeline-badge ">1
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> March 2017 - June
+                                                    2017</small>
+                                            <h4 class="timeline-title">Senior Application Developer</h4>
+                                            <b>TRADER Corporation</b><br />
+                                            Vancouver, BC, CAN (<a href="https://go.trader.ca/"
+                                                target="_blank">go.trader.ca</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    Developing of the new version of trader.ca web application
+                                                    <br /><i>Main Technologies used:</i> (.NET 4.7, C#, SQL Server,
+                                                    WebAPI, OWIN, JSON)
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-90px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> December 2014 -
+                                                    April 2016</small>
+                                            <h4 class="timeline-title">Senior Software Developer</h4>
+                                            <b>EmployeeConnect Software - EC</b><br />
+                                            Sydney, NSW, AUS (<a href="http://www.employeeconnect.com"
+                                                target="_blank">www.employeeconnect.com</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    &#x02022; Developing and maintaining core ERP System engine EC6
+                                                    &#x02022; Developing EmployeeConnect Business Builder (A tool
+                                                    enables any user
+                                                    to build own Forms and Reports in less than 5 minutes)
+                                                    &#x02022; Developing and maintaining integration between EC5/6
+                                                    Engines and
+                                                    MOODLE
+                                                    &#x02022; Integration between EC6 and Xero Payroll
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i>Technologies used:</i>
+                                                    &#x02022; .NET 4-4.5
+                                                    &#x02022; VB.NET
+                                                    &#x02022; C#
+                                                    &#x02022; SQL Server
+                                                    &#x02022; Bootstrap 4
+                                                    &#x02022; JQuery
+                                                    &#x02022; MySQL
+                                                    &#x02022; AWS
+                                                    &#x02022; MVC
+                                                    &#x02022; OAuth
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="margin-top:-220px;">
+                                    <div class="timeline-badge danger">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> April 2009 -
+                                                    August 2014</small>
+                                            <h4 class="timeline-title">Software Development Manager/ Software Engineer
+                                            </h4>
+                                            <b>ALHOSN University - AHU </b><br />
+                                            Abu Dhabi, UAE (<a href="http://www.alhosnu.ae"
+                                                target="_blank">www.alhosnu.ae</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    &#x02022; Planning and managing IT projects
+                                                    &#x02022; Software and hardware procurement
+                                                    &#x02022; Leading analyzing, developing, deploying and
+                                                    administrating in-house
+                                                    developed projects
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group3" style="margin-top:5px;">
+                                                <li class="list-group-item active">
+                                                    Main Projects
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>ALHOSN University Official Website, 4 Online Portals & Full
+                                                        Automation</b>
+                                                    <br />
+                                                    <i>Main Technologies used:</i> Microsoft .NET (C# and ASP.NET 4.0),
+                                                    IIS, Windows Server, SQL Server 2012 and Oracle 10g database.
+                                                    <br />
+                                                    <i>Portals Features:</i> <a href="http://goo.gl/6umpnn"
+                                                        target="_blank">http://goo.gl/6umpnn</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>MOODLE Course Management System</b>
+                                                    <br />
+                                                    <i>About the project:</i> Moodle Installation on openSuse 11.0,
+                                                    Moodle UI Customizations, Integration with TurnItIn and McGraw-Hill
+                                                    applications
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-180px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> June 2007 - April
+                                                    2009</small>
+                                            <h4 class="timeline-title">Senior Systems Developer and Analyst</h4>
+                                            <b>Ministry of Presidential Affairs - MoPA </b><br />
+                                            Abu Dhabi, UAE (<a href="http://www.mopa.ae"
+                                                target="_blank">www.mopa.ae</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    &#x02022; Analyzing and developing projects (Mainly Web-based) for
+                                                    the
+                                                    ministry
+                                                    &#x02022; Deploying and administrating Web based projects
+                                                    &#x02022; Support and troubleshooting Web based projects
+                                                    &#x02022; Managing and training junior and new senior developers
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group3" style="margin-top:5px;">
+                                                <li class="list-group-item active">
+                                                    Main Projects
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i>Main Technologies used:</i>
+                                                    &#x02022; C#
+                                                    &#x02022; ASP.NET
+                                                    &#x02022; IIS
+                                                    &#x02022; Windows Server
+                                                    &#x02022; SQL Server
+                                                    &#x02022; Visual Studio .NET.
+                                                    &#x02022; SharePoint Server 2003
+                                                    &#x02022; Oracle 10g
+                                                    &#x02022; Ultimus Workflow
+                                                    &#x02022; Saperion Archiving System
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>MOPA Content Management Server (Codenamed: CMSConcept)</b>
+                                                    <br />
+                                                    <i>CMS Features:</i> <a href="http://goo.gl/uKzhu"
+                                                        target="_blank">http://goo.gl/uKzhu</a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>HH Sheikh Khalifa Bin Zayed Al.Nahyan (UAE President) Website</b>
+                                                    <br />
+                                                    Full implementation of the MOPA
+                                                    Content Management Server to manage site structure and information.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Ministry of Presidential Affairs in the UAE Intranet System</b>
+                                                    <br />
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Ministry of Presidential Affairs in the UAE Official Website
+                                                        (MOPA)</b>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="margin:0px;margin-top:-305px;padding-bottom:0px;">
+                                    <div class="timeline-badge danger">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> December 2002 -
+                                                    June 2007</small>
+                                            <h4 class="timeline-title">Technical Project Manager</h4>
+                                            <b>Sakhr Software</b><br />
+                                            Cairo, Egypt / Abu Dhabi, UAE (<a href="http://www.sakhr.com"
+                                                target="_blank">www.sakhr.com</a>)
+                                            <ul style="font-size: 12px;">
+                                                <li>Dec 2002 to Jun 2005: Junior/Senior Software Developer</li>
+                                                <li>Jan 2005 to Jun 2007: Technical Team Leader/Project Manager</li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item active">
+                                                    Main Responsibilities
+                                                </li>
+                                                <li class="list-group-item">
+                                                    &#x02022; Analyzing and developing projects held by the company
+                                                    &#x02022; Planning, Team leading and Managing some of the projects
+                                                    &#x02022; Deploying and administrating Web based projects
+                                                </li>
+                                            </ul>
+                                            <ul class="list-group list-group3" style="margin-top:5px;">
+                                                <li class="list-group-item active">
+                                                    Main Projects
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Abu Dhabi Educational Zone Web Based Automation System (ADEZ)</b>
+                                                    <br />
+                                                    <i>Main Technologies used:</i> C#, ASP.NET, IIS, Windows Server,
+                                                    Microsoft SQL Server, Microsoft Visual Studio .NET, MailSite Mail
+                                                    Server, Ultimus Workflow. <i>Project Duration:</i> 3 years.
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Oman Ministry of Education Web Based Full Automation System</b>
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin:0px;margin-top:-95px;padding-bottom:0px;">
+                                    <div class="timeline-badge warning">2
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> April 2002 -
+                                                    December 2002</small>
+                                            <h4 class="timeline-title">Web/Application developer</h4>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8" style="width:100%;padding: 7px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-education"></span> <b>Education</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="padding:0px;">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge">1
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> Jan 2001 - Dec
+                                                    2001</small>
+                                            <h4 class="timeline-title">Post Graduate Diploma in Systems Development</h4>
+                                            <b>Information Technology Institute (ITI)</b><br />
+                                            Part of Information and Decision Support Center (IDSC)<br />
+                                            Giza, Egypt (<a href="http://www.iti.gov.eg"
+                                                target="_blank">www.iti.gov.eg</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item">
+                                                    <b>Graduation Project:</b> VoiceXML Gateway (Written in C++)
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Graduation Grade:</b> Excellent
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-155px;">
+                                    <div class="timeline-badge danger">5
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 1995 -
+                                                    2000</small>
+                                            <h4 class="timeline-title">Bachelor of Science in Engineering</h4>
+                                            <b>Ain Shams University, Faculty of Engineering</b><br />
+                                            Cairo, Egypt (<a href="http://www.asu.edu.eg"
+                                                target="_blank">www.asu.edu.eg</a>)
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>
+                                            <ul class="list-group list-group3">
+                                                <li class="list-group-item">
+                                                    <b>Major:</b> Civil Engineering
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <b>Graduation Project:</b> Sanitary Engineering project
+                                                </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6" style="width:600px;padding:0px;padding-right:5px;margin-left:8px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-trophy fa-fw"></i> <b>Awards/Appreciation Certificates</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="padding:0px;">
+                            <ul class="timeline">
+                                <li style="margin-top:-5px;">
+                                    <div class="timeline-badge warning"><span class="fa fa-trophy"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:247px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> February
+                                                    2010</small>
+                                            <h5 class="timeline-title"><b>"Most Valuable Contribution by an Employee"
+                                                    Award</b></h5>
+                                            ALHOSN University, Abu Dhabi, UAE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-75px;">
+                                    <div class="timeline-badge"><span class="fa fa-trophy"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:249px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> August
+                                                    2009</small>
+                                            <h5 class="timeline-title"><b>Appreciation Certificate for participation and
+                                                    contribution in the "Open Source Day"</b></h5>
+                                            Zayed University, Abu Dhabi, UAE.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="margin-top:-50px;">
+                                    <div class="timeline-badge info"><span class="fa fa-trophy"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:247px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> February
+                                                    2009</small>
+                                            <h5 class="timeline-title"><b>Appreciation Certificate for "Ehtimam Website"
+                                                    creation</b></h5>
+                                            Ministry of Presidential Affairs, Abu Dhabi, UAE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" style="width:410px;padding:0px;padding-right:5px;margin-left:3px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-book fa-fw"></i> <b>Training Courses</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="padding:0px;">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge warning"><span class="fa fa-book"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:152px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> May 2008</small>
+                                            <h5 class="timeline-title"><b>Project Management Professionals (PMP)</b>
+                                            </h5>
+                                            ITI, Cairo, Egypt
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted" style="margin-top:-95px;">
+                                    <div class="timeline-badge"><span class="fa fa-book"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:152px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> March
+                                                    2008</small>
+                                            <h5 class="timeline-title"><b>Ultimus BMP (Full track)</b></h5>
+                                            Ultimus, Dubai, UAE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="margin-top:-30px;">
+                                    <div class="timeline-badge info"><span class="fa fa-book"></span>
+                                    </div>
+                                    <div class="timeline-panel" style="width:152px;">
+                                        <div class="timeline-heading">
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> Dec 2007</small>
+                                            <h5 class="timeline-title"><b>SharePoint 2007 (Full track)</b></h5>
+                                            Exceed, Abu Dhabi, UAE
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8" style="width:100%;padding: 7px;">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-flask fa-fw"></i> <b>Remarkable Personal Projects</b>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="padding:10px;">
+                            <ul class="list-group list-group4">
+                                <li class="list-group-item">
+                                    Creation of a freeware opensource Sourceforge project called
+                                    "<b>OpenImageManager</b>" (URL:
+                                    <a href="http://openimgmanager.sourceforge.net"
+                                        target="_blank">http://openimgmanager.sourceforge.net</a>) .It is an image
+                                    manager written in C#. The application offers image viewing functionalities like
+                                    folder explorer bar, thumbnails views, images resizing plus simple and advanced HTML
+                                    Album generators.
+                                </li>
+                                <li class="list-group-item">
+                                    Published IEEE Paper about "<b>Developing an Initial Open-Source Platform for the
+                                        Higher Education Sector</b>". This is a research project aims to provide Higher
+                                    Education institutes a complete freeware and open source solution for their main
+                                    activities. More about the project at: <a
+                                        href="http://www.computer.org/csdl/trans/lt/2009/03/tlt2009030239.html"
+                                        target="_blank">http://www.computer.org/csdl/trans/lt/2009/03/tlt2009030239.html</a>
+                                </li>
+                                <li class="list-group-item">
+                                    Implementation of several Web-based Automation Systems like:
+                                    <br />- Muamalat LLC Corporate Portal located at: <a href="http://muamalatuae.com/"
+                                        target="_blank">http://muamalatuae.com/</a>
+                                    <br />- An advertising portal (UAEE) LAMP solution (PHP, mySQL Server, Apache and
+                                    Linux)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row" style="width:100%;margin-left:auto;margin-right:auto;">
+                <div class="col-md-6" style="width:495px;padding-left: 15px;">
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            <i class="fa fa-language fa-fw"></i> Language Skills
+                        </li>
+                        <li class="list-group-item">
+                            <b>English</b> Fluent
+                            <span class="pull-right text-muted small">
+                                <div class="progress active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Arabic</b> Native
+                            <span class="pull-right text-muted small">
+                                <div class="progress active">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <b>French</b> Fair
+                            <span class="pull-right text-muted small">
+                                <div class="progress active">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="90"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6" style="width:495px;padding-right: 10px;">
+                    <ul class="list-group">
+                        <li class="list-group-item active">
+                            <i class="fa fa-user fa-fw"></i> Personal Data
+                        </li>
+                        <li class="list-group-item">
+                            Year of Birth
+                            <span class="pull-right text-muted small"><em style="font-size:12px;">1977</em>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Driving License
+                            <span class="pull-right text-muted small"><em style="font-size:12px;">Yes</em>
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            Ready to Relocate/Travel
+                            <span class="pull-right text-muted small"><em style="font-size:12px;">Yes (50%)</em>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+        <br />
+    </div>
+    <!-- /#wrapper -->
+
+
+
+</body>
+
+</html>
